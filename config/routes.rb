@@ -1,18 +1,18 @@
 Rails.application.routes.draw do
 
-  root 'api#index'
+  root 'timeslot#index'
 
   post '/api/timeslot', to: 'timeslot#create'
-  get '/api/timelots', to: 'timeslot#index'
+  get '/api/timeslots', to: 'timeslot#index'
   post '/api/boats', to: 'boats#create'
   get '/api/boats', to: 'boats#index'
   post 'api/booking', to: 'booking#create'
   post 'api/assignment', to: 'assignment#create'
 
-#   Prefix Verb URI Pattern               Controller#Action
-#           root GET  /                         api#index
+#        Prefix Verb  URI Pattern               Controller#Action
+#           root GET  /                         timeslot#index
 #   api_timeslot POST /api/timeslot(.:format)   timeslot#create
-#   api_timelots GET  /api/timelots(.:format)   timeslot#index
+#  api_timeslots GET  /api/timeslots(.:format)  timeslot#index
 #      api_boats POST /api/boats(.:format)      boats#create
 #                GET  /api/boats(.:format)      boats#index
 #    api_booking POST /api/booking(.:format)    booking#create

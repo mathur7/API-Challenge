@@ -1,0 +1,7 @@
+<h1> Hello World </h1>
+<% @timeslots.each do |timeslot| %>
+<%= timeslot.start_time -%>
+<%= timeslot.availability -%>
+<%= timeslot.duration -%>
+<%= timeslot.customer_count -%>
+<% end %>
