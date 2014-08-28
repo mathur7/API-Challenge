@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'timeslot#index'
 
-  post '/api/timeslot', to: 'timeslot#create'
+  post '/api/timeslots', to: 'timeslot#create'
   get '/api/timeslots', to: 'timeslot#index'
   post '/api/boats', to: 'boats#create'
   get '/api/boats', to: 'boats#index'
